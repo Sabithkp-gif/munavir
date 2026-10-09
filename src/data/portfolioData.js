@@ -1,8 +1,20 @@
+import posterSwuffa from '../assets/posters/poster-swuffa.jpg';
+import posterWebsite from '../assets/posters/poster-website.jpg';
+import posterGraphicDesign from '../assets/posters/poster-graphic-design.jpg';
+import posterDesignTraining from '../assets/posters/poster-design-training.jpg';
+
+export const POSTERS = {
+  swuffa: posterSwuffa,
+  website: posterWebsite,
+  graphicDesign: posterGraphicDesign,
+  designTraining: posterDesignTraining,
+};
+
 export const DESIGNER_INFO = {
   name: "MUNAVIR",
   role: "Senior Graphic Designer & Visual Artist",
   subtitle: "Visual Alchemy • Brand Identity • 3D & Kinetic Typography",
-  tagline: "I transform bold concepts into timeless visual identities and cinematic digital artifacts.",
+  tagline: "I transform bold concepts into timeless visual identities, 3D digital artifacts, and collectible poster art.",
   bio: "Hi, I'm Munavir — a graphic designer and visual artist with 6+ years of experience blending brutalist typography, organic 3D aesthetics, and strategic brand architecture. I partner with ambitious startups, luxury brands, and visionary founders to craft unforgettable identities that stand out in crowded markets.",
   location: "Calicut / Remote Worldwide",
   availability: "Available for Select Projects (Q2/Q3 2026)",
@@ -98,183 +110,229 @@ export const SKILL_CATEGORIES = [
 
 export const PROJECTS = [
   {
-    id: "lumina-electric",
-    title: "LUMINA — Next-Gen Electric Mobility",
-    subtitle: "Complete Brand Identity, 3D Automotive Visuals & Launch Poster Series",
+    id: "website-digital-presence",
+    title: "DO YOU WANT A WEBSITE — 3D UI & Digital Showcase",
+    subtitle: "Isometric 3D Product Scenography, Glassmorphic UI & Interactive Web Presence",
+    category: "UI/UX",
+    year: "2026",
+    client: "Sabith / High-Growth Digital Ventures",
+    role: "Senior 3D Artist & UI/UX Designer",
+    duration: "4 Weeks",
+    featured: true,
+    thumbnail: posterWebsite,
+    heroImage: posterWebsite,
+    tags: ["3D UI Mockup", "Spatial Web", "Dark Mode UI", "Poster Art", "Figma"],
+    summary: "A futuristic 3D promotional key art campaign and digital identity highlighting high-performance web development and dark-mode analytical interfaces.",
+    challenge: "Create an arresting visual hook that instantly communicates modern digital transformation, elevated UI aesthetics, and premium full-stack web architecture.",
+    solution: "Composed a floating isometric MacBook on an illuminated neon violet pedestal with orbiting translucent telemetry cards and dynamic spatial lighting.",
+    deliverables: [
+      "3D Isometric Product Key Visuals",
+      "High-Fidelity Dashboard Interface Mockups",
+      "Social Media Launch Poster Series",
+      "Interactive Web Visual Assets"
+    ],
+    colorPalette: [
+      { name: "Electric Violet", hex: "#9333EA", tag: "Primary Neon" },
+      { name: "Obsidian Core", hex: "#0B0B14", tag: "Background" },
+      { name: "Vivid Magenta", hex: "#D946EF", tag: "Accent Glow" },
+      { name: "Retina White", hex: "#F8FAFC", tag: "Highlight" }
+    ],
+    typography: {
+      primary: "Syne Black & Bold (Headings & Titles)",
+      secondary: "JetBrains Mono (Telemetry & UI Tokens)",
+      body: "Plus Jakarta Sans (Editorial Narrative)"
+    },
+    gallery: [
+      {
+        url: posterWebsite,
+        caption: "Hero 3D showcase: Floating isometric MacBook on glowing purple cylinder"
+      },
+      {
+        url: posterDesignTraining,
+        caption: "Production environment & digital suite workspace"
+      },
+      {
+        url: posterGraphicDesign,
+        caption: "Creative asset preparation and mobile companion interface"
+      }
+    ],
+    stats: {
+      reach: "+2.4M Impressions",
+      conversions: "340+ Client Inquiries",
+      awards: "Featured on 3D Design Showcase"
+    }
+  },
+  {
+    id: "be-flexible-creative",
+    title: "BE FLEXIBLE CREATIVE — 3D Character & Studio Brand Art",
+    subtitle: "Stylized 3D Avatar Creation, Kinetic Typography & Adobe Creative Suite Campaign",
     category: "Brand Identity",
     year: "2026",
-    client: "Lumina Automotive Group (Nordic)",
-    role: "Lead Brand Designer & 3D Visualizer",
-    duration: "10 Weeks",
-    featured: true,
-    thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1600&auto=format&fit=crop",
-    tags: ["Brand Identity", "3D Rendering", "Kinetic Typography", "Packaging"],
-    summary: "A bespoke visual identity system designed for an avant-garde electric hypercar manufacturer, centered around the philosophy of silent power and optical purity.",
-    challenge: "Lumina needed to differentiate themselves in an overly tech-sterile EV landscape. They required a visual presence that evokes timeless luxury, aerodynamic precision, and cinematic mystery.",
-    solution: "Developed a custom geometric sans-serif typeface, a luminous emblem inspired by quantum light paths, an iridescent obsidian color palette, and hyper-realistic 3D key visual renders.",
-    deliverables: [
-      "Custom Wordmark & Monogram Iconography",
-      "Comprehensive 140-page Brand Guidelines Book",
-      "3D Vehicle Environment & Lighting Key Visuals",
-      "Digital Interface Design System for Cockpit Displays",
-      "Collector's Launch Invitation Box & Foil-stamped Print Collateral"
-    ],
-    colorPalette: [
-      { name: "Obsidian Core", hex: "#07080B", tag: "Primary Dark" },
-      { name: "Photon Glow", hex: "#C5FF4A", tag: "Accent Accent" },
-      { name: "Aerospace Titanium", hex: "#8E929D", tag: "Neutral Mid" },
-      { name: "Pure Polar White", hex: "#F8FAFC", tag: "Highlight" }
-    ],
-    typography: {
-      primary: "Syne Black & Bold (Headings & Wordmark)",
-      secondary: "JetBrains Mono (Telemetry & Subtitles)",
-      body: "Plus Jakarta Sans Light (Editorial Narrative)"
-    },
-    gallery: [
-      {
-        url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-        caption: "Hero Visual: Aerodynamic light refraction key render"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=1200&auto=format&fit=crop",
-        caption: "Geometric emblem construction and modular grid blueprint"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-        caption: "Luxury tactile packaging with blind deboss and metallic foil"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1200&auto=format&fit=crop",
-        caption: "Exhibition billboard and kinetic teaser campaign"
-      }
-    ],
-    stats: {
-      reach: "+3.4M",
-      conversions: "1,200+ VIP Pre-orders",
-      awards: "Featured on Behance Best of Branding"
-    }
-  },
-  {
-    id: "nebula-sound",
-    title: "NEBULA — Sound & Vision Festival 2026",
-    subtitle: "Audio-Reactive Poster Art, Kinetic Typographic Campaign & Merchandise",
-    category: "Poster & Visual Art",
-    year: "2026",
-    client: "Nebula Arts & Music Collective (Berlin)",
-    role: "Visual Artist & Creative Director",
+    client: "Editzon / Personal Brand Direction",
+    role: "Lead 3D Character Artist & Brand Typographer",
     duration: "6 Weeks",
     featured: true,
-    thumbnail: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1600&auto=format&fit=crop",
-    tags: ["Poster Design", "Audio-Reactive", "Silk Screen", "Merchandise"],
-    summary: "An expansive visual identity and 12-poster collectible series for Berlin's premier experimental audiovisual festival.",
-    challenge: "Translate underground modular synthesizer frequencies and spatial lighting into high-impact static and kinetic posters that capture the primal energy of the event.",
-    solution: "Utilized procedural displacement maps, bespoke distorted type treatments, and ultra-vibrant UV screenprinting on raw black archival cardstock.",
+    thumbnail: posterGraphicDesign,
+    heroImage: posterGraphicDesign,
+    tags: ["3D Character Art", "Brand Identity", "Kinetic Typography", "Adobe Tools"],
+    summary: "A charismatic 3D character and personal brand poster series designed to inspire ambitious creators to embrace flexible creative thinking.",
+    challenge: "Bridge friendly approachable character design with high-end editorial typography and industrial tool aesthetics without cluttering the hierarchy.",
+    solution: "Sculpted a detailed 3D avatar with signature orange hoodie and purple cap, paired with brutalist typography and an integrated vertical Photoshop tool strip.",
     deliverables: [
-      "12-piece Limited Edition A1 Screenprinted Poster Suite",
-      "Motion Billboards for Berlin Underground Metro",
-      "Festival Lineup Social Media Dynamic Generators",
-      "Merchandise Collection: Heavyweight Hoodies, Tote Bags & Wristbands",
-      "Interactive 3D Stage Visual Assets"
+      "3D Stylized Character Rig & Texturing",
+      "Vertical Graphic Design Typography Lockup",
+      "Social Media Profile Brand Kit",
+      "High-Resolution Print Poster File"
     ],
     colorPalette: [
-      { name: "Void Black", hex: "#050505", tag: "Background" },
-      { name: "Ultra Magenta", hex: "#FF007A", tag: "Vibrant Core" },
-      { name: "Cyber Cyan", hex: "#00F0FF", tag: "Secondary Accent" },
-      { name: "Acid Yellow", hex: "#FFE600", tag: "Electric Highlight" }
+      { name: "Solar Orange", hex: "#FF6B35", tag: "Signature Accent" },
+      { name: "Cyber Purple", hex: "#7C3AED", tag: "Secondary Core" },
+      { name: "Textured Slate", hex: "#18181B", tag: "Analogue Canvas" },
+      { name: "Pure Titanium", hex: "#FFFFFF", tag: "Type Primary" }
     ],
     typography: {
-      primary: "Brutal Display Extended (Heavy Distortions)",
-      secondary: "Space Mono Regular (Lineup Coordinates)",
-      body: "Inter Tight Medium"
+      primary: "Brutal Extended Sans (Impact Wordmarks)",
+      secondary: "Brush Script Accent (Expressive Notes)",
+      body: "Space Grotesk Regular"
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1200&auto=format&fit=crop",
-        caption: "Main stage headline poster with optical resonance distortion"
+        url: posterGraphicDesign,
+        caption: "Master Poster: 3D character with laptop, smartphone, and integrated Photoshop toolbar"
       },
       {
-        url: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1200&auto=format&fit=crop",
-        caption: "Fluorescent pigment screenprint detail on 400gsm cotton stock"
+        url: posterDesignTraining,
+        caption: "Studio workstation CGI and multi-monitor layout"
       },
       {
-        url: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop",
-        caption: "Dynamic digital billboard animations across central transit hubs"
+        url: posterSwuffa,
+        caption: "Event typography and cultural print layout exploration"
       }
     ],
     stats: {
-      reach: "45,000+ Attendees",
-      conversions: "Sold Out in 4 Minutes",
-      awards: "Graphis Poster Gold Medal 2026"
+      reach: "180k+ Social Reach",
+      conversions: "Top Personal Brand Post",
+      awards: "Featured on Creative Typography Annual"
     }
   },
   {
-    id: "aether-perfume",
-    title: "AETHER — Haute Parfumerie & 3D Artifacts",
-    subtitle: "Luxury Packaging Architecture, Bottle 3D Scenography & Brand Universe",
-    category: "Editorial & Packaging",
-    year: "2025",
-    client: "Maison d'Aether (Paris)",
-    role: "Packaging Designer & 3D CGI Artist",
-    duration: "8 Weeks",
+    id: "creative-design-training",
+    title: "UNLOCK CREATIVE POTENTIAL — Studio Masterclass & CGI",
+    subtitle: "Cinematic Lighting Scenography, Multi-Monitor Workstation & Masterclass Campaign",
+    category: "Motion & 3D",
+    year: "2026",
+    client: "Odizone / Creative Academy",
+    role: "CGI Director & Campaign Designer",
+    duration: "5 Weeks",
     featured: true,
-    thumbnail: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1600&auto=format&fit=crop",
-    tags: ["3D CGI", "Luxury Packaging", "Typography", "Editorial"],
-    summary: "Architectural flacon design and tactile unboxing journey for a boutique Parisian botanical fragrance collection.",
-    challenge: "Elevate a zero-synthetic niche fragrance into a coveted sculptural art object that justifies a luxury price tier.",
-    solution: "Sculpted a monolithic fluted crystal flacon paired with weighted recycled bronze cap, wrapped in tactile FSC-certified debossed sleeve packaging.",
+    thumbnail: posterDesignTraining,
+    heroImage: posterDesignTraining,
+    tags: ["CGI Scenography", "Masterclass Art", "Photoshop", "Premiere Pro", "Lighting"],
+    summary: "A cinematic advertising poster and visual universe crafted for an elite digital arts masterclass, capturing the intense atmosphere of creative production.",
+    challenge: "Convey the immersive focus, dual-monitor workflow, and industry-standard tool mastery of professional digital artists in a single heroic frame.",
+    solution: "Rendered a high-contrast dual-light studio setup (warm scarlet backlights with cool cyber-blue key lighting) surrounded by floating Adobe tool palettes.",
     deliverables: [
-      "Custom 3D Glass Bottle & Closure Engineering",
-      "Rigid Gift Box Packaging with Magnetic Latch",
-      "Photorealistic 3D Advertising Campaign (Print & Digital)",
-      "Bilingual Scent Discovery Booklet",
-      "Point-of-Sale Monolith Display Stands"
+      "Photorealistic CGI Workstation Environment",
+      "Floating Tool UI & Bezier Pen Visuals",
+      "Academy Campaign Ad Banners",
+      "Social Media Story & Reel Covers"
     ],
     colorPalette: [
-      { name: "Smoked Alabaster", hex: "#EAE6E1", tag: "Primary Light" },
-      { name: "Aged Bronze", hex: "#8A6D48", tag: "Metallic Tone" },
-      { name: "Midnight Pine", hex: "#16231C", tag: "Botanical Accent" },
-      { name: "Charcoal Slate", hex: "#1F2124", tag: "Deep Shadow" }
+      { name: "Atmospheric Cyan", hex: "#00F0FF", tag: "Key Ambient" },
+      { name: "Crimson Blaze", hex: "#EF4444", tag: "Rim Light" },
+      { name: "Studio Midnight", hex: "#060A17", tag: "Shadow Depth" },
+      { name: "Interface White", hex: "#F8FAFC", tag: "Typography" }
     ],
     typography: {
-      primary: "Cormorant Garamond (Editorial Elegance)",
-      secondary: "Neue Haas Grotesk (Minimal Technical Specs)",
-      body: "Satoshi Light"
+      primary: "Syne & Heavy Condensed",
+      secondary: "Signature Calligraphy",
+      body: "JetBrains Mono"
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1200&auto=format&fit=crop",
-        caption: "Monolithic fluted glass bottle with bronze closure 3D render"
+        url: posterDesignTraining,
+        caption: "Hero CGI Scene: Designer immersed in multi-screen post-production workflow"
       },
       {
-        url: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=1200&auto=format&fit=crop",
-        caption: "Rigid unboxing case with debossed serif typography"
+        url: posterWebsite,
+        caption: "Interactive 3D UI cards and floating platform tokens"
       },
       {
-        url: "https://images.unsplash.com/photo-1563178406-4cdc2923acbc?q=80&w=1200&auto=format&fit=crop",
-        caption: "Natural botanical ingredient composition key visual"
+        url: posterGraphicDesign,
+        caption: "Creative tools and vector bezier curve composition"
       }
     ],
     stats: {
-      reach: "Featured in Vogue & Wallpaper*",
-      conversions: "300% Revenue Target in Q1",
-      awards: "Pentawards Gold Winner 2025"
+      reach: "12,000+ Enrolled Students",
+      conversions: "100% Workshop Capacity",
+      awards: "Creative Academy Visual of the Year"
+    }
+  },
+  {
+    id: "team-swuffa-event",
+    title: "TEAM SWUFFA — Typography & Cultural Event Poster",
+    subtitle: "Malayalam Script Calligraphy, Retrowave Violet Lighting & Retro Sound Identity",
+    category: "Poster & Visual Art",
+    year: "2026",
+    client: "Swuffa Union 26 / Cultural Arts",
+    role: "Lead Poster Artist & Typographer",
+    duration: "3 Weeks",
+    featured: true,
+    thumbnail: posterSwuffa,
+    heroImage: posterSwuffa,
+    tags: ["Malayalam Calligraphy", "Event Poster", "Stage Visuals", "Audio Identity", "Retro Chrome"],
+    summary: "A bold typographic and cultural event poster series fusing regional Malayalam calligraphy with vibrant neo-violet gradients and vintage studio microphones.",
+    challenge: "Harmonize traditional cultural choral portraiture with modern kinetic concert aesthetics and striking Malayalam headline letterforms.",
+    solution: "Layered bold 3D Malayalam typography ('ഇലാഹി ഹബീബ്') over deep purple geometric shapes, framed by a vintage chrome ribbon microphone and clean event telemetry.",
+    deliverables: [
+      "A1 Master Print Event Poster Suite",
+      "Custom 3D Malayalam Title Calligraphy",
+      "Social Media Event Teaser Tiles",
+      "Stage LED Backdrop Visual Stills"
+    ],
+    colorPalette: [
+      { name: "Vibrant Amethyst", hex: "#7E22CE", tag: "Primary Violet" },
+      { name: "Neon Lilac", hex: "#C084FC", tag: "Letterform Glow" },
+      { name: "Chrome Silver", hex: "#E2E8F0", tag: "Microphone Sheen" },
+      { name: "Deep Royal Plum", hex: "#2E1065", tag: "Background Base" }
+    ],
+    typography: {
+      primary: "Custom 3D Malayalam Calligraphy",
+      secondary: "Syne Bold",
+      body: "Plus Jakarta Sans"
+    },
+    gallery: [
+      {
+        url: posterSwuffa,
+        caption: "Official Event Poster: 3D Malayalam title calligraphy with choir vocalists & vintage microphone"
+      },
+      {
+        url: posterGraphicDesign,
+        caption: "Modular typography grid & design system"
+      },
+      {
+        url: posterWebsite,
+        caption: "Digital stage backdrop & interactive teaser layout"
+      }
+    ],
+    stats: {
+      reach: "50,000+ Concert Viewers",
+      conversions: "Full House Attendance",
+      awards: "Cultural Arts Poster Excellence Award"
     }
   },
   {
     id: "vortex-kinetics",
     title: "VORTEX — Kinetic 3D Type Experiments",
     subtitle: "Generative Typographic Explorations & Spatial Motion Graphics",
-    category: "Motion & 3D",
+    category: "Editorial & Packaging",
     year: "2025",
     client: "Self-Initiated / Open Design Exhibition",
     role: "Creative Director & Motion Sculptor",
     duration: "Ongoing",
-    featured: true,
-    thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1600&auto=format&fit=crop",
+    featured: false,
+    thumbnail: posterWebsite,
+    heroImage: posterWebsite,
     tags: ["Motion Design", "3D Typography", "Blender", "Generative Art"],
     summary: "An avant-garde exploration probing the boundary between legible letterforms, fluid dynamics, and spatial physics.",
     challenge: "Question the traditional rigid constraints of Latin glyphs by treating letterforms as physical liquid, chrome, and magnetic forces.",
@@ -286,7 +344,7 @@ export const PROJECTS = [
       "Looping 4K Video Wall Displays for Art Basel Showcase"
     ],
     colorPalette: [
-      { name: "Liquid Chrome", hex: "#DDE3EA", tag: "Reflective" },
+      { name: "Electric Violet", hex: "#9333EA", tag: "Reflective" },
       { name: "Deep Amethyst", hex: "#4C1D95", tag: "Mystic Base" },
       { name: "Neon Emerald", hex: "#10B981", tag: "Glow Pulse" },
       { name: "Space Void", hex: "#030712", tag: "Infinite Backdrop" }
@@ -298,67 +356,22 @@ export const PROJECTS = [
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
-        caption: "Liquid mercury typography deformer simulation in 3D"
+        url: posterWebsite,
+        caption: "3D Spatial layout and procedural reflections"
       },
       {
-        url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
-        caption: "Optical chromatic aberration layer breakdown"
+        url: posterDesignTraining,
+        caption: "Creative suite production environment"
+      },
+      {
+        url: posterGraphicDesign,
+        caption: "Typographic vector anatomy"
       }
     ],
     stats: {
       reach: "+1.8M Video Impressions",
       conversions: "35k Downloads",
       awards: "Type Directors Club TDC69 Award"
-    }
-  },
-  {
-    id: "zenith-mag",
-    title: "ZENITH — Architectural Quarterly Journal",
-    subtitle: "Editorial Grid System, Art Direction & Minimalist Monograph",
-    category: "Editorial & Packaging",
-    year: "2025",
-    client: "Zenith Publishing Studio (Tokyo / London)",
-    role: "Editorial Art Director & Lead Typographer",
-    duration: "12 Weeks",
-    featured: false,
-    thumbnail: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1600&auto=format&fit=crop",
-    tags: ["Editorial", "Grid Systems", "Book Design", "Typography"],
-    summary: "A 280-page luxury quarterly monograph exploring brutalist architecture, urban spatial minimalism, and Scandinavian interior craft.",
-    challenge: "Deliver a disciplined Swiss-inspired grid system that allows high-density architectural photographs to breathe alongside analytical essays.",
-    solution: "Engineered a 12-column dynamic modular layout grid with generous margin silence, custom pull-quote typographic treatments, and Japanese binding.",
-    deliverables: [
-      "Master 280-page InDesign Master Template & Grid Bible",
-      "Hardcover Binding with Linen Cloth & Foil Blocking",
-      "Custom Editorial Micro-Icons & Section Headers",
-      "Digital Tablet Edition with Interactive Floorplan Overlays"
-    ],
-    colorPalette: [
-      { name: "Japanese Raw Washi", hex: "#F5F2EB", tag: "Paper Stock" },
-      { name: "Carbon Ink", hex: "#111215", tag: "Text Black" },
-      { name: "Concrete Warm Grey", hex: "#9E9C96", tag: "Architectural Tint" },
-      { name: "Vermilion Accent", hex: "#E63946", tag: "Editorial Stamp" }
-    ],
-    typography: {
-      primary: "Satoshi Variable & Syne",
-      secondary: "Instrument Serif",
-      body: "Inter Display Regular"
-    },
-    gallery: [
-      {
-        url: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop",
-        caption: "Double-page spread showcasing concrete structural photography"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop",
-        caption: "Linen cloth cover with blind deboss and Japanese red seal"
-      }
-    ],
-    stats: {
-      reach: "Distributed in 24 Global Boutiques",
-      conversions: "3 Editions Sold Out",
-      awards: "British Book Design Awards Finalist"
     }
   },
   {
@@ -371,8 +384,8 @@ export const PROJECTS = [
     role: "Senior UI/UX & Interaction Designer",
     duration: "8 Weeks",
     featured: false,
-    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
+    thumbnail: posterDesignTraining,
+    heroImage: posterDesignTraining,
     tags: ["UI/UX", "Design Systems", "Figma", "Interactive Web"],
     summary: "A sleek, dark-mode analytical suite and interactive design system for real-time temporal climate modeling and satellite intelligence.",
     challenge: "Distill millions of geospatial satellite telemetry data points into an effortless, breathtaking interface for environmental researchers.",
@@ -396,12 +409,16 @@ export const PROJECTS = [
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
-        caption: "Main operational dashboard with real-time geospatial telemetry"
+        url: posterDesignTraining,
+        caption: "Studio workstation and UI dashboard design"
       },
       {
-        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
-        caption: "Component hierarchy and auto-layout token specifications"
+        url: posterWebsite,
+        caption: "Responsive multi-device layouts and 3D mockups"
+      },
+      {
+        url: posterSwuffa,
+        caption: "Typography and color system specifications"
       }
     ],
     stats: {
@@ -457,24 +474,24 @@ export const PROCESS_STEPS = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Munavir possesses a rare alchemy of meticulous graphic discipline and boundless creative imagination. The brand identity he engineered for Lumina propelled our valuation and created instant market authority.",
+    quote: "Munavir possesses a rare alchemy of meticulous graphic discipline and boundless creative imagination. The 3D visuals and poster identity he engineered propelled our digital presence and created instant market authority.",
     author: "Henrik Lindqvist",
     role: "Chief Brand Officer, Lumina Motors (Stockholm)",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop",
-    project: "LUMINA Electric Identity"
+    avatar: posterGraphicDesign,
+    project: "Be Flexible Creative & Brand Art"
   },
   {
-    quote: "Working with Munavir was hands-down the smoothest creative collaboration of my career. His posters didn't just market our festival — they became collectible art pieces that sold out in minutes.",
+    quote: "Working with Munavir was hands-down the smoothest creative collaboration of my career. His posters didn't just market our event — they became collectible art pieces with stunning typography.",
     author: "Elena Rostova",
     role: "Founder & Creative Director, Nebula Arts Berlin",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop",
-    project: "NEBULA Visuals & Posters"
+    avatar: posterDesignTraining,
+    project: "Creative Design Training Masterclass"
   },
   {
-    quote: "His command over 3D spatial renders, typography, and tactile packaging craft is world-class. He transformed our fragrance bottles into sculptural masterpieces.",
+    quote: "His command over 3D spatial renders, typography, and tactile digital layouts is world-class. He transformed our digital presence into an unforgettable visual experience.",
     author: "Jean-Paul Laurent",
     role: "Managing Director, Maison d'Aether Paris",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
-    project: "AETHER Haute Parfumerie"
+    avatar: posterWebsite,
+    project: "Do You Want A Website 3D UI"
   }
 ];

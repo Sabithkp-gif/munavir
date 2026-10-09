@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Sparkles, CheckCircle2, FileText, ArrowUpRight, Compass, ShieldCheck } from 'lucide-react';
-import { DESIGNER_INFO } from '../data/portfolioData';
+import { DESIGNER_INFO, POSTERS } from '../data/portfolioData';
 import { sound } from '../utils/sound';
 
 export default function About() {
@@ -57,11 +57,11 @@ export default function About() {
               className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-panel border border-white/10 shadow-2xl group"
             >
               <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop"
+                src={POSTERS.graphicDesign}
                 alt="Munavir - Graphic Designer & Visual Artist"
-                className="w-full h-full object-cover grayscale contrast-125 transition-all duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover grayscale-[20%] contrast-110 transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                 style={{
-                  filter: `blur(${blurAmount}px) grayscale(85%)`,
+                  filter: `blur(${blurAmount}px)`,
                 }}
               />
 
